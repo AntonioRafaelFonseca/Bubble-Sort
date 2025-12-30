@@ -1,8 +1,8 @@
 /*
+
 This is a visualization of the Bubble Sort algorithm using p5.js.
 
 Bubble Sort explained:
-
 
 
 ##Sorting##
