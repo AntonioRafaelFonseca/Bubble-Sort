@@ -89,7 +89,6 @@ let j = 0;
 
 function setup() {
   createCanvas(max(400, numberOfBars), 400);    //limits the canvas width to 400 
-  outsideCavas =createCanvas(max(400, numberOfBars)+25, 400+25)
   for(let i = 0;i< numberOfBars;i++){
     RandomArray.push(map(i, 0, numberOfBars, 1, height));                 // adds in the numbers
   }
@@ -150,7 +149,6 @@ function draw() {                         //main loop
   
   frameRate(10)
   if(CountCorrect(RandomArray) !== RandomArray.length - 1){
-    outsideCavas.background(117)
     for (current=0;current<substeps;current++){
 
       background(0);
