@@ -80,7 +80,7 @@ To determine the dimensions of each bar in the visualization we can use the foll
 
 const numberOfBars = 100;           //set this to whateaver you want
 let RandomArray = [];
-let substeps = numberOfBars/5;    //decrease the number to increase the number of substeps
+let substeps = numberOfBars/2;    //decrease the number to increase the number of substeps
 let lastCorrectIndex;
 let RedBarIndex;
 let ItemsToRandomlyAddInMainArray = []
@@ -147,11 +147,11 @@ function goAndDraw(l){                                //iterate over all the ite
 
 function draw() {                         //main loop
   
-  frameRate(10)
+  frameRate(60)
   if(CountCorrect(RandomArray) !== RandomArray.length - 1){
     for (current=0;current<substeps;current++){
-
       background(0);
+      
       goAndDraw(RandomArray);
       
       //substeps = map(mouseX, 0, 200, 1, numberOfBars)      You can add this here to be able to control with the mouse X position the substeps
